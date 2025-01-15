@@ -56,5 +56,5 @@ def write_to_csv(csv_path: str, new_data: list[dict], unique_columns: list[str])
 
     # Write the combined data back to the CSV
     df_combined.to_csv(csv_path, index=False)
-    logging.info(f"Successfully wrote/updated CSV {csv_path} with {len(df_combined)} total records.")
+    logging.info(f"Successfully wrote CSV {csv_path} with {len(df_combined)} total records.")
 
